@@ -10,7 +10,7 @@ dataSub$Sub_metering_2<-as.numeric(dataSub$Sub_metering_2)
 dataSub$Sub_metering_3<-as.numeric(dataSub$Sub_metering_3)
 
 dateT<-paste(dataSub$Date, dataSub$Time)
-dateT2<-strptime(dateTime, "%d/%m/%Y %H:%M:%S")
+dateT2<-strptime(dateT, "%d/%m/%Y %H:%M:%S")
 
 png("plot4.png",width=480,height=480)
 par(mfrow=c(2,2))
