@@ -7,7 +7,7 @@ dataSub$Sub_metering_2<-as.numeric(dataSub$Sub_metering_2)
 dataSub$Sub_metering_3<-as.numeric(dataSub$Sub_metering_3)
 
 dateT<-paste(dataSub$Date, dataSub$Time)
-dateT2<-strptime(dateTime, "%d/%m/%Y %H:%M:%S")
+dateT2<-strptime(dateT, "%d/%m/%Y %H:%M:%S")
 
 png("plot3.png",width=480,height=480)
 plot(dateT2, dataSub$Sub_metering_1, type="l", xlab="", ylab="Energy Sub Metering",col="black")
